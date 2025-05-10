@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Home page to demonstrate prerequisite knowledge from WDD 131 – Dynamic Web Fundamentals class. Created by Karina Domingos dos Santos Felippe.">
+    <meta name="author" content="Karina Felippe">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+
+    <title>WDD 231 – Karina Felippe</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-menu">
+            <img src="images/profile.avif" alt="Karina Felippe Profile" width="60" height="80">
+            <h1 class="playwrite-it-moderna-font light-color-text">Karina Felippe</h1>
+            <span id="menu"></span>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a target="_blank" href="">Chamber</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">Final</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/karinafelippe">GitHub
+                        Profile</a>
+                </li>
+                <li>
+                    <a class="light-color-text" target="_blank"
+                        href="https://linkedin.com/in/karinasantosfelippe">Linkedin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section class="country">
+            <h2>São Paulo, Brazil</h2>
+            <figure>
+                <img src="images/itu.avif" alt="Parque do Varvito, Itu, Sao Paulo">
+                <figcaption>Itu, Sao Paulo , Brazil</figcaption>
+            </figure>
+        </section>
+        <section class="certificates">
+            <h2>Web and Computer Programming Certificates</h2>
+            <div class="buttons">
+                <button id="all" class="selected">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <div id="courses"></div>
+            <p>Total Credits: <span id="credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p class="playwrite-it-moderna-font">&copy;<span id="currentyear"></span> | Karina Domingos dos Santos Felippe |
+            Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
+
+<!-- Created by Karina Felippe -->

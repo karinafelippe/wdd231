@@ -1,0 +1,77 @@
+@media only screen and (max-width: 43rem) {
+header {
+        background: var(--color1);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        font-size: 2em;
+        font-weight: 700;
+        color: #000;
+        display: block;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        color: var(--color5);
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: larger;
+        transition: 0.5s;
+    }
+
+    .active,
+    nav a:hover {
+        background-color: rgb(0, 100, 0, 0.5);
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .show li {
+        display: block;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        display: block;
+    }
+
+    main section {
+        margin-bottom: 1rem;
+    }
+}
