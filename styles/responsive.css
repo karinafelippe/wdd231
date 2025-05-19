@@ -1,5 +1,5 @@
 @media only screen and (max-width: 43rem) {
-header {
+    header {
         background: var(--color1);
         padding: 1.5rem;
         display: flex;
@@ -34,10 +34,7 @@ header {
         flex-direction: column;
         margin: 0 auto;
         max-width: 760px;
-    }
-
-    .navigation li {
-        display: none;
+        overflow: hidden;
     }
 
     nav a {
@@ -59,10 +56,6 @@ header {
         text-decoration: underline;
     }
 
-    .show li {
-        display: block;
-    }
-
     body {
         font-size: 14px;
     }
@@ -73,5 +66,15 @@ header {
 
     main section {
         margin-bottom: 1rem;
+    }
+
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+    nav.show {
+        grid-template-rows: 1fr;
     }
 }
