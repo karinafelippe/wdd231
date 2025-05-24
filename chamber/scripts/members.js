@@ -38,13 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let membersData = [];
     const gridBtn = document.getElementById('gridViewBtn');
     const listBtn = document.getElementById('listViewBtn');
-
     fetch('data/members.json')
         .then(res => res.json())
         .then(data => {
             membersData = data;
             displayMembers(membersData, 'grid');
         });
+        
+    if(!gridBtn || !listBtn) {
+        return;
+    }
 
     gridBtn.addEventListener('click', () => {
         gridBtn.classList.add('active');
