@@ -34,7 +34,6 @@ function displayMembers(members, view = 'grid') {
     });
 }
 
-// Toggle view logic
 document.addEventListener('DOMContentLoaded', () => {
     let membersData = [];
     const gridBtn = document.getElementById('gridViewBtn');
