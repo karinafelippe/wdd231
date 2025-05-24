@@ -4,7 +4,7 @@
     "address": "Rua das Flores, 123, Itu, SP",
     "phone": "+55 11 4002-1234",
     "website": "https://itutech.com.br",
-    "image": "itutech.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 3,
     "description": "Technology solutions for businesses in Itu and region.",
     "email": "contact@itutech.com.br"
@@ -14,7 +14,7 @@
     "address": "Av. dos Padeiros, 456, Itu, SP",
     "phone": "+55 11 4002-5678",
     "website": "https://paoquente.com",
-    "image": "paoquente.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 1,
     "description": "Traditional bakery with fresh bread every day.",
     "email": "contato@paoquente.com"
@@ -24,7 +24,7 @@
     "address": "Rua Saúde, 789, Itu, SP",
     "phone": "+55 11 4002-7890",
     "website": "https://vidasaudavel.com",
-    "image": "vidasaudavel.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 2,
     "description": "Health and wellness clinic with specialized professionals.",
     "email": "info@vidasaudavel.com"
@@ -34,7 +34,7 @@
     "address": "Av. Central, 101, Itu, SP",
     "phone": "+55 11 4002-1010",
     "website": "https://bompreco.com",
-    "image": "bompreco.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 1,
     "description": "Your neighborhood supermarket with the best prices.",
     "email": "sac@bompreco.com"
@@ -44,7 +44,7 @@
     "address": "Rua do Esporte, 202, Itu, SP",
     "phone": "+55 11 4002-2020",
     "website": "https://academiamovimento.com",
-    "image": "movimento.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 2,
     "description": "Modern gym with group classes and personal trainers.",
     "email": "contato@academiamovimento.com"
@@ -54,7 +54,7 @@
     "address": "Av. Gourmet, 303, Itu, SP",
     "phone": "+55 11 4002-3030",
     "website": "https://saborcaseiro.com",
-    "image": "saborcaseiro.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 3,
     "description": "Homemade food with a special touch.",
     "email": "reservas@saborcaseiro.com"
@@ -64,7 +64,7 @@
     "address": "Rua da Moda, 404, Itu, SP",
     "phone": "+55 11 4002-4040",
     "website": "https://estilo.com",
-    "image": "estilo.png",
+    "image": "handshake-regular.svg",
     "membershipLevel": 1,
     "description": "Fashion store with the latest trends.",
     "email": "vendas@estilo.com"

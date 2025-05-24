@@ -23,8 +23,8 @@ function displayMembers(members, view = 'grid') {
                         <img src="images/${member.image}" alt="${member.name}">
                     </div>
                     <div class="business-details">
-                        <div><strong>EMAIL:</strong> ${member.email || '-'}</div>
-                        <div><strong>PHONE:</strong> ${member.phone || '-'}</div>
+                        <div><strong>Email:</strong> ${member.email || '-'}</div>
+                        <div><strong>Phone:</strong> ${member.phone || '-'}</div>
                         <div><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website.replace(/^https?:\/\//, '')}</a></div>
                     </div>
                 </div>
