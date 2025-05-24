@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="styles/base-small.css">
 
     <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/members.js"></script>
 
     <title>Itu Chamber of Commerce | City of Itu, Sao Paulo - Brazil</title>
 </head>
@@ -83,56 +84,12 @@
             </div>
         </section>
 
-        <section class="business-cards">
-            <div class="business-card">
-                <div class="business-info">
-                    <h3>Business Name</h3>
-                    <h4>Business Tag Line</h4>
-                    <hr>
-                    <div class="business-details-row">
-                        <div class="business-img">
-                            <img src="images/handshake-regular.svg" alt="Business 1">
-                        </div>
-                        <div class="business-details">
-                            <div><strong>EMAIL:</strong> info@email.com</div>
-                            <div><strong>PHONE:</strong> 800-555-1234</div>
-                            <div><strong>URL:</strong> mybusiness.com</div>
-                        </div>
-                    </div>
-                </div>      </div>
-            <div class="business-card">
-                <div class="business-info">
-                    <h3>Business Name</h3>
-                    <h4>Business Tag Line</h4>
-                    <hr>
-                    <div class="business-details-row">
-                        <div class="business-img">
-                            <img src="images/handshake-regular.svg" alt="Business 1">
-                        </div>
-                        <div class="business-details">
-                            <div><strong>EMAIL:</strong> info@email.com</div>
-                            <div><strong>PHONE:</strong> 800-555-1234</div>
-                            <div><strong>URL:</strong> mybusiness.com</div>
-                        </div>
-                    </div>
-                </div>      </div>
-            <div class="business-card">
-                <div class="business-info">
-                    <h3>Business Name</h3>
-                    <h4>Business Tag Line</h4>
-                    <hr>
-                    <div class="business-details-row">
-                        <div class="business-img">
-                            <img src="images/handshake-regular.svg" alt="Business 1">
-                        </div>
-                        <div class="business-details">
-                            <div><strong>EMAIL:</strong> info@email.com</div>
-                            <div><strong>PHONE:</strong> 800-555-1234</div>
-                            <div><strong>URL:</strong> mybusiness.com</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="business-view-toggle">
+            <button id="gridViewBtn" class="active">Grid View</button>
+            <button id="listViewBtn">List View</button>
+        </section>
+        <section class="business-cards grid-view">
+            <!-- Member cards will be injected here by JS -->
         </section>
     </main>
     <footer>
