@@ -13,6 +13,7 @@ async function getSpotlights() {
 function displaySpotlights(members) {
     const container = document.querySelector('.business-cards');
     container.innerHTML = '';
+    container.className = 'business-cards grid-view';
 
     members.forEach(member => {
         const card = document.createElement('div');
