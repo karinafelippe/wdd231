@@ -2,11 +2,9 @@ async function getSpotlights() {
     const response = await fetch('data/members.json');
     const members = await response.json();
 
-    // Filter only silver (2) and gold (3) members
     const spotlights = members.filter(m => m.membershipLevel === 2 || m.membershipLevel === 3);
 
-    // Shuffle and pick 2 or 3 randomly
-    const count = Math.floor(Math.random() * 2) + 2; // 2 or 3
+    const count = Math.floor(Math.random() * 2) + 2;
     const selected = spotlights.sort(() => 0.5 - Math.random()).slice(0, count);
 
     displaySpotlights(selected);
