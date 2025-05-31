@@ -44,7 +44,7 @@
 
 .card-body {
     background: var(--color3);
-    color: var(--color6);
+    color: var(--color5);
     padding: 1.2rem 1rem;
     flex: 1;
     font-size: 1rem;
@@ -146,14 +146,14 @@
     flex-direction: column;
     gap: 0.2em;
     font-size: 0.97rem;
-    color: var(--color6);
+    color: var(--color5);
     align-items: flex-start;
     margin-top: 0;
     justify-content: center;
 }
 
 .business-details a {
-    color: var(--color6);
+    color: var(--color5);
     text-decoration: none;
 }
 

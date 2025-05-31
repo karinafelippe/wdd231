@@ -4,6 +4,8 @@
     --color3: #dddddd;
     --color4: #ffffff;
     --color5: #000000;
+    --color6: #8f8f8f;
+    --color7: #3f3f3f;
 }
 
 .header-container {
@@ -78,18 +80,12 @@
 }
 
 #menu-toggle {
-    display: none;
     background: none;
     border: none;
     font-size: 2rem;
     cursor: pointer;
     color: var(--color5);
     margin-left: 1rem;
-}
-
-.menu-icon {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 /* MAIN */
@@ -100,9 +96,31 @@ body {
     color: var(--color5);
 }
 
-main {
-    margin: 0 auto;
-    max-width: 80%;
+body.dark-mode {
+    background-color: var(--color5);
+    color: var(--color4);
+}
+
+body.dark-mode .page-title {
+    color: var(--color4);
+}
+
+body.dark-mode .card-title {
+    background: var(--color2);
+    color: var(--color5);
+}
+
+body.dark-mode .card-body,
+body.dark-mode .business-card {
+    background: var(--color3);
+    color: var(--color5);
+    border-color: var(--color6);
+}
+
+body.dark-mode .nav-list li a:hover,
+body.dark-mode .nav-list li a:focus {
+    background-color: var(--color5);
+    color: var(--color4);
 }
 
 .page-title {

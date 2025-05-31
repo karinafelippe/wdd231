@@ -2,19 +2,26 @@
 
     .header-container {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        justify-content: center;
         padding: 0.5rem 2vw;
     }
 
     .logo-title {
-        justify-content: flex-start;
-        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
 
     .main-nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 100%;
+        position: static;
+        margin-bottom: 1rem;
     }
 
     .nav-list {
@@ -22,20 +29,12 @@
         gap: 0.5rem;
         width: 100%;
         align-items: center;
-        display: none;
-    }
-
-    .nav-list.active {
-        display: flex;
     }
 
     #menu-toggle {
         display: block;
-        margin: 0.5rem auto;
-    }
-
-    .menu-icon {
-        font-size: 2.2rem;
+        margin: 0.5rem 0;
+        align-self: center;
     }
 
     .hero-img {
