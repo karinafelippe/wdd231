@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Substitua pelo seu API key
+const apiKey = '3eb228bdf96b668982db76b9c3e62f4b'; // Substitua pelo seu API key
 const city = 'Itu,BR';
 const units = 'metric';
 
@@ -19,18 +19,27 @@ async function fetchWeather() {
 }
 
 function displayWeather(current, forecast) {
-    // Current weather
-    const weatherCard = document.querySelector('.card-title:contains("Current Weather")').parentElement;
+    const weatherCard = document.getElementById('current-weather-card');
+    const weather = current.weather[0];
+    const temp = Math.round(current.main.temp);
+    const tempMax = Math.round(current.main.temp_max);
+    const tempMin = Math.round(current.main.temp_min);
+    const humidity = current.main.humidity;
+    const sunrise = new Date(current.sys.sunrise * 1000).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    const sunset = new Date(current.sys.sunset * 1000).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
     weatherCard.querySelector('.card-body').innerHTML = `
         <p>
-            <strong>${Math.round(current.main.temp)}°C</strong>, 
-            ${current.weather[0].description.charAt(0).toUpperCase() + current.weather[0].description.slice(1)}
+            <strong>${temp}°C</strong>, ${weather.description.charAt(0).toUpperCase() + weather.description.slice(1)}
         </p>
+        <p>High: ${tempMax}°C</p>
+        <p>Low: ${tempMin}°C</p>
+        <p>Humidity: ${humidity}%</p>
+        <p>Sunrise: ${sunrise}</p>
+        <p>Sunset: ${sunset}</p>
     `;
 
-    // 3-day forecast
-    const forecastCard = document.querySelector('.card-title:contains("Weather Forecast")').parentElement;
-    // Filter for 12:00:00 time for the next 3 days
+    const forecastCard = document.getElementById('forecast-card');
     const forecastList = forecast.list.filter(item => item.dt_txt.includes('12:00:00')).slice(0, 3);
     let forecastHtml = '';
     forecastList.forEach(item => {
@@ -38,8 +47,7 @@ function displayWeather(current, forecast) {
         const day = date.toLocaleDateString('en-US', { weekday: 'short' });
         forecastHtml += `
             <div>
-                <strong>${day}:</strong> ${Math.round(item.main.temp)}°C, 
-                ${item.weather[0].description.charAt(0).toUpperCase() + item.weather[0].description.slice(1)}
+                <strong>${day}:</strong> ${Math.round(item.main.temp)}°C
             </div>
         `;
     });

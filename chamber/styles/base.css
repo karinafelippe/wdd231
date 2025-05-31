@@ -1,10 +1,9 @@
 :root {
-    --color1: #49708a;
-    --color2: #88abc2;
-    --color3: #d0e0eb;
-    --color4: #ebf7f8;
-    --color5: #5c2500;
-    --color6: #000000;
+    --color1: #004755;
+    --color2: #00aed1;
+    --color3: #dddddd;
+    --color4: #ffffff;
+    --color5: #000000;
 }
 
 .header-container {
@@ -37,12 +36,12 @@
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1;
-    color: var(--color6);
+    color: var(--color5);
 }
 
 .chamber-subtitle {
     font-size: 0.85rem;
-    color: var(--color6);
+    color: var(--color5);
     letter-spacing: 0.1em;
     text-transform: lowercase;
     margin-top: 0.1em;
@@ -64,7 +63,7 @@
 
 .nav-list li a {
     text-decoration: none;
-    color: var(--color6);
+    color: var(--color5);
     font-weight: 500;
     font-size: 1.1rem;
     transition: color 0.2s;
@@ -74,7 +73,7 @@
 .nav-list li a:hover,
 .nav-list li a:focus {
     color: var(--color3);
-    background-color: var(--color5);
+    background-color: var(--color1);
     border-radius: 10px;
 }
 
@@ -84,7 +83,7 @@
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--color6);
+    color: var(--color5);
     margin-left: 1rem;
 }
 
@@ -98,7 +97,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color4);
-    color: var(--color6);
+    color: var(--color5);
 }
 
 main {
@@ -110,7 +109,7 @@ main {
     text-align: left;
     font-size: 2.5rem;
     margin: 1rem;
-    color: var(--color6);
+    color: var(--color5);
 }
 
 /* FOOTER LAYOUT */
@@ -120,7 +119,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--color2);
-    color: var(--color6);
+    color: var(--color5);
     padding: .7rem 5vw;
     margin-top: 1rem;
     text-align: center;
