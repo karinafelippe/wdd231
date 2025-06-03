@@ -72,6 +72,12 @@
     padding: 0.3rem 0.8rem;
 }
 
+.nav-list li a.active {
+    border: 2px solid var(--color5);
+    background-color: var(--color3);
+    border-radius: 10px;
+}
+
 .nav-list li a:hover,
 .nav-list li a:focus {
     color: var(--color3);
