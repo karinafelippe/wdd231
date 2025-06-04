@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Thank You | Itu Chamber of Commerce">
+    <meta property="og:description"
+        content="Thank you for joining the Itu Chamber of Commerce. Your application has been received.">
+    <meta property="og:url" content="https://karinafelippe.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://karinafelippe.github.io/wdd231/chamber/images/handshake-regular.svg" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Itu Chamber of Commerce">
+    <meta name="description"
+        content="Thank you for joining the Itu Chamber of Commerce. Your application has been received.">
+    <meta name="author" content="Karina Felippe">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-responsive.css">
+
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/thankyou.js"></script>
+
+    <title>Thank You | Itu Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <img src="images/handshake-regular.svg" alt="Itu Chamber Logo" class="logo-img">
+                <div class="title-box">
+                    <span class="itu-title">Itu</span>
+                    <span class="chamber-subtitle">chamber of commerce</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+                <button id="menu-toggle" aria-label="Toggle Dark/Light Mode"><span
+                        class="darkmode-toggle">☾</span></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="thankyou-section">
+            <h1>Thank You for Joining!</h1>
+            <p>Your application has been received. We appreciate your interest in the Itu Chamber of Commerce.</p>
+            <h2>Submitted Information</h2>
+            <div class="thankyou-info">
+                <p><strong>First Name:</strong> <span id="outFirstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="outLastName"></span></p>
+                <p><strong>Email:</strong> <span id="outEmail"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="outMobile"></span></p>
+                <p><strong>Business/Organization Name:</strong> <span id="outOrganization"></span></p>
+                <p><strong>Submission Date:</strong> <span id="outTimestamp"></span></p>
+            </div>
+            <a href="index.html" class="thankyou-card-button">Return to Home</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-box left">
+            <p>Itu Chamber of Commerce</p>
+            <p>210 av Jose Carlos Massoco</p>
+            <p>Itu, SP 13300-000</p>
+            <p>sac@itucc.org</p>
+            <p>+55 (11) 4002-8922</p>
+        </div>
+        <div class="footer-box center">
+            <p>
+                <a href="https://www.facebook.com/karinasantosfelippe" target="_blank">
+                    <img src="images/facebook_icon.svg" alt="Facebook" width="40" height="40">
+                </a>
+                <a href="https://www.instagram.com/karinasantosfelippe/" target="_blank">
+                    <img src="images/instagram_icon.svg" alt="Instagram" width="40" height="40">
+                </a>
+                <a href="https://www.youtube.com/@NoMundoDaEduarda" target="_blank">
+                    <img src="images/youtube_icon.svg" alt="YouTube" width="40" height="40">
+                </a>
+            </p>
+        </div>
+        <div class="footer-box right">
+            <p>WDD231 Class Project</p>
+            <p>Karina Domingos dos Santos Felippe</p>
+            <p>&copy;<span id="currentyear"></span> Itu Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+
+</html>
+<!-- Created by Karina Felippe -->

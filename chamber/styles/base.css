@@ -104,7 +104,6 @@ body {
 
 body.dark-mode {
     background-color: var(--color5);
-    color: var(--color4);
 }
 
 body.dark-mode .page-title {
@@ -116,24 +115,20 @@ body.dark-mode .card-title {
     color: var(--color5);
 }
 
-body.dark-mode .card-body,
-body.dark-mode .business-card {
-    background: var(--color3);
-    color: var(--color5);
-    border-color: var(--color6);
-}
-
-body.dark-mode .nav-list li a:hover,
-body.dark-mode .nav-list li a:focus {
-    background-color: var(--color5);
-    color: var(--color4);
-}
-
 .page-title {
     text-align: left;
     font-size: 2.5rem;
     margin: 1rem;
     color: var(--color5);
+}
+
+.card-title {
+    background: var(--color1);
+    color: var(--color4);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: left;
 }
 
 .visually-hidden {
