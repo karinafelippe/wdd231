@@ -233,5 +233,14 @@
     .card img {
         display: block;
         margin: 0 auto;
+        transition: none !important;
+        filter: none !important;
+        box-shadow: none !important;
+    }
+
+    .card img:hover {
+        transform: none !important;
+        filter: none !important;
+        box-shadow: none !important;
     }
 }
