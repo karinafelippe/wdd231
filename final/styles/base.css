@@ -105,7 +105,7 @@ a:hover {
 }
 
 nav {
-    background: var(--cerulean);
+    background: var(--platinum);
     padding: 0.5rem 0;
     margin-top: 1.5rem;
 }
@@ -121,7 +121,7 @@ nav ul.nav-list {
 }
 
 nav ul.nav-list li a {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -132,7 +132,6 @@ nav ul.nav-list li a {
 nav ul.nav-list li a.active,
 nav ul.nav-list li a:hover {
     background: var(--sky-blue);
-    color: var(--indigo-dye);
 }
 
 #menu-toggle {

@@ -64,17 +64,16 @@ main h2 {
 
 .event-card h3 {
     margin: 0 0 0.5rem 0;
-    color: var(--lapis-lazuli);
 }
 
 .event-card .event-date {
     font-weight: bold;
-    color: var(--cerulean);
+    color: var(--black);
 }
 
 .event-card .event-category {
     background: var(--sky-blue);
-    color: var(--indigo-dye);
+    color: var(--black);
     border-radius: 4px;
     padding: 0.2em 0.7em;
     font-size: 0.95em;
@@ -162,7 +161,7 @@ main h2 {
 .event-card:focus,
 .event-card:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid var(--indigo-dye);
 }
 
 .event-card img {
@@ -185,6 +184,7 @@ main h2 {
 
 .event-info h2 {
     margin: 0.5rem 0 0.2rem 0;
+    color: var(--black);
     font-size: 1.3rem;
 }
 
