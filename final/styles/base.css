@@ -72,11 +72,13 @@ ul {
 }
 
 a {
-    color: var(--lapis-lazuli);
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: var(--indigo-dye);
+    text-decoration: underline;
 }
 
 .outlined {
