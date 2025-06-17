@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Karina Felippe">
+    <meta name="description"
+        content="Browse all community events in Itu, SP, Brazil. Search, filter, and find details for each event.">
+
+    <meta property="og:title" content="Events Directory | Community Events Portal">
+    <meta property="og:description" content="A searchable and filterable list of community events in Itu, SP, Brazil.">
+    <meta property="og:url" content="https://karinafelippe.github.io/wdd231/final/events.html">
+    <meta property="og:image" content="images/palette.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Community Events Portal">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/events.css">
+
+    <script type="module" src="scripts/events.js"></script>
+    <script src="../scripts/getdates.js" defer></script>
+
+    <title>Events Directory | Community Events Portal</title>
+</head>
+
+<body>
+    <header>
+        <h1>Events Directory</h1>
+        <nav id="main-nav">
+            <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events Directory</a></li>
+                <li><a href="submit.html">Submit/Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-filter">
+            <form id="filter-form" aria-label="Filtrar eventos">
+                <label for="category">Categoria:</label>
+                <select id="category" name="category">
+                    <option value="">All</option>
+                    <option value="Handicraft">Handicraft</option>
+                    <option value="Gastronomy">Gastronomy</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Exhibition">Exhibition</option>
+                    <option value="Theater">Theater</option>
+                    <option value="Music">Music</option>
+                    <option value="Environment">Environment</option>
+                    <option value="Dance">Dance</option>
+                    <option value="Tourism">Tourism</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Cinema">Cinema</option>
+                    <option value="Gathering">Gathering</option>
+                    <option value="Fair">Fair</option>
+                </select>
+            </form>
+        </section>
+        <section id="events-list-section">
+            <h2>Events</h2>
+            <div id="events-list"></div>
+        </section>
+        <div id="event-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+            <div class="modal-content">
+                <button id="modal-close" aria-label="Fechar detalhes do evento">&times;</button>
+                <img class="modal-image" src="" alt="" width="320" height="180">
+                <h2 class="modal-title"></h2>
+                <p class="modal-date"></p>
+                <p class="modal-location"></p>
+                <p class="modal-category"></p>
+                <p class="modal-description"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Karina Felippe | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "Itu Handicraft Fair",
+        "date": "2025-07-05",
+        "location": "Praça da Matriz, Downtown",
+        "category": "Handicraft",
+        "description": "Exhibition and sale of local handicrafts, live music, and typical foods.",
+        "image": "images/artesanato.webp"
+    },
+    {
+        "id": 2,
+        "title": "Winter Gastronomy Festival",
+        "date": "2025-07-12",
+        "location": "Varvito Park",
+        "category": "Gastronomy",
+        "description": "Tasting of typical dishes, food trucks, and cultural performances.",
+        "image": "images/gastronomia.webp"
+    },
+    {
+        "id": 3,
+        "title": "Itu Night Run",
+        "date": "2025-07-19",
+        "location": "Avenida Gal. Glicério",
+        "category": "Sports",
+        "description": "Night street race with 5km and 10km courses.",
+        "image": "images/corrida.webp"
+    },
+    {
+        "id": 4,
+        "title": "Classic Cars Gathering",
+        "date": "2025-07-26",
+        "location": "Praça do Carmo",
+        "category": "Exhibition",
+        "description": "Exhibition of classic cars, music, and food court.",
+        "image": "images/carros.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Amateur Theater Showcase",
+        "date": "2025-08-02",
+        "location": "TEMEC Theater",
+        "category": "Theater",
+        "description": "Theatrical plays by local and regional groups.",
+        "image": "images/teatro.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Sertanejo Music Festival",
+        "date": "2025-08-09",
+        "location": "Taboão Ecological Park",
+        "category": "Music",
+        "description": "Shows by sertanejo artists and food court.",
+        "image": "images/sertanejo.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Environment Week",
+        "date": "2025-08-16",
+        "location": "Varvito Park",
+        "category": "Environment",
+        "description": "Lectures, workshops, and activities for children about sustainability.",
+        "image": "images/meioambiente.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Food Truck Gathering",
+        "date": "2025-08-23",
+        "location": "Praça Washington Luiz",
+        "category": "Gastronomy",
+        "description": "Variety of food trucks and live music.",
+        "image": "images/foodtrucks.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Itu Dance Festival",
+        "date": "2025-08-30",
+        "location": "Prudente de Moraes Gymnasium",
+        "category": "Dance",
+        "description": "Performances by dance groups of various styles.",
+        "image": "images/danca.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Guided Historical Walk",
+        "date": "2025-09-06",
+        "location": "Itu Historic Center",
+        "category": "Tourism",
+        "description": "Guided tour of the city's main historical sites.",
+        "image": "images/caminhada.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Urban Photography Workshop",
+        "date": "2025-09-13",
+        "location": "Republican Museum",
+        "category": "Workshop",
+        "description": "Practical photography workshop through the streets of Itu.",
+        "image": "images/fotografia.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Open-Air Cinema Festival",
+        "date": "2025-09-20",
+        "location": "Varvito Park",
+        "category": "Cinema",
+        "description": "Screening of national films outdoors, free popcorn.",
+        "image": "images/cinema.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Motorcyclists Gathering",
+        "date": "2025-09-27",
+        "location": "Praça do Carmo",
+        "category": "Gathering",
+        "description": "Motorcyclists' meetup, shows, and food trucks.",
+        "image": "images/motos.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Itu Vegan Fair",
+        "date": "2025-10-04",
+        "location": "Praça da Matriz",
+        "category": "Fair",
+        "description": "Vegan products, lectures, and cooking workshops.",
+        "image": "images/vegana.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Independent Rock Festival",
+        "date": "2025-10-11",
+        "location": "Taboão Ecological Park",
+        "category": "Music",
+        "description": "Independent rock bands and food court.",
+        "image": "images/rock.jpg"
+    }
+]

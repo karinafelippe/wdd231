@@ -1,0 +1,245 @@
+body {
+    background: var(--platinum);
+    color: var(--indigo-dye);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--lapis-lazuli);
+    color: var(--white);
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.search-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#searchInput,
+#categoryFilter {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: 1px solid var(--lapis-lazuli);
+    border-radius: 4px;
+}
+
+#events-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: var(--white);
+    border: 2px solid var(--sky-blue);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: box-shadow 0.2s;
+    align-items: center;
+    text-align: center;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--lapis-lazuli);
+}
+
+.event-card .event-date {
+    font-weight: bold;
+    color: var(--cerulean);
+}
+
+.event-card .event-category {
+    background: var(--sky-blue);
+    color: var(--indigo-dye);
+    border-radius: 4px;
+    padding: 0.2em 0.7em;
+    font-size: 0.95em;
+    display: inline-block;
+}
+
+.event-card button {
+    background: var(--lapis-lazuli);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.event-card button:hover {
+    background: var(--cerulean);
+    color: var(--white);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+.modal.open {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #fff;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90vw;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    outline: none;
+}
+
+#modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.event-card {
+    background: var(--card-bg, #f9f9f9);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.event-card:focus,
+.event-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    outline: 2px solid var(--primary-color);
+}
+
+.event-card img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-info h2 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.3rem;
+}
+
+.event-date,
+.event-location,
+.event-category {
+    font-size: 1rem;
+    margin: 0.1rem 0;
+}
+
+#filter-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#filter-form label {
+    font-weight: bold;
+}
+
+#filter-form select {
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+footer {
+    background: var(--lapis-lazuli);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (min-width: 700px) {
+    #events-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 1rem;
+        max-width: 95vw;
+    }
+
+    .event-card {
+        padding: 0.7rem;
+    }
+
+    #filter-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Karina Felippe">
+    <meta name="description"
+        content="Submit a new community event or contact the organizers. Get involved in Itu, SP, Brazil!">
+    <meta property="og:title" content="Submit or Contact | Community Events Portal">
+    <meta property="og:description" content="Submit a new event or contact the Community Events Portal organizers.">
+    <meta property="og:url" content="https://karinafelippe.github.io/wdd231/final/submit.html">
+    <meta property="og:image" content="images/palette.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Community Events Portal">
+    <link rel="icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/submit.css">
+    <title>Submit or Contact | Community Events Portal</title>
+</head>
+
+<body>
+    <header>
+        <h1>Submit an Event / Contact</h1>
+        <nav id="main-nav">
+            <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events Directory</a></li>
+                <li><a href="submit.html" class="active">Submit/Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Submit a New Event</h2>
+            <form id="eventForm" action="form-action.html" method="get" autocomplete="on">
+                <label>Event Name:
+                    <input type="text" name="eventName" required autocomplete="off">
+                </label>
+                <label>Date:
+                    <input type="date" name="eventDate" required>
+                </label>
+                <label>Location:
+                    <input type="text" name="eventLocation" required autocomplete="off">
+                </label>
+                <label>Category:
+                    <select name="eventCategory" required>
+                        <option value="music">Music</option>
+                        <option value="sports">Sports</option>
+                        <option value="education">Education</option>
+                        <option value="family">Family</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label>Description:
+                    <textarea name="eventDescription" required></textarea>
+                </label>
+                <label>Organizer Name:
+                    <input type="text" name="organizerName" required autocomplete="off">
+                </label>
+                <label>Organizer Email:
+                    <input type="email" name="organizerEmail" required autocomplete="email">
+                </label>
+                <button type="submit">Submit Event</button>
+            </form>
+        </section>
+        <section>
+            <h2>Contact the Organizers</h2>
+            <form id="contactForm" action="form-action.html" method="get" autocomplete="on">
+                <label>Your Name:
+                    <input type="text" name="contactName" required autocomplete="off">
+                </label>
+                <label>Your Email:
+                    <input type="email" name="contactEmail" required autocomplete="email">
+                </label>
+                <label>Message:
+                    <textarea name="contactMessage" required></textarea>
+                </label>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Karina Felippe | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script type="module" src="scripts/submit.js"></script>
+    <script src="../scripts/getdates.js" defer></script>
+</body>
+
+</html>

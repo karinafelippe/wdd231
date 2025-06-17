@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Karina Felippe">
+    <meta name="description"
+        content="Welcome to the Community Events Portal for Itu, SP, Brazil. Discover, share, and participate in local events!">
+    <meta property="og:title" content="Community Events Portal | Itu, SP, Brazil">
+    <meta property="og:description"
+        content="Find and share community events in Itu, SP, Brazil. Engage with your local community.">
+    <meta property="og:url" content="https://karinafelippe.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="images/palette.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Community Events Portal">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Community Events Portal | Itu, SP, Brazil</title>
+</head>
+
+<body>
+    <header>
+        <h1>Community Events Portal</h1>
+        <nav id="main-nav">
+            <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="events.html">Events Directory</a></li>
+                <li><a href="submit.html">Submit/Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Itu's Community Events Portal</h2>
+            <p>Discover, share, and participate in local events. Stay connected with your community!</p>
+        </section>
+        <section id="featured-events">
+            <h2>Featured Events</h2>
+            <div id="featured-events-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Karina Felippe | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script type="module" src="scripts/index.js"></script>
+    <script src="../scripts/getdates.js" defer></script>
+</body>
+
+</html>
