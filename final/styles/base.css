@@ -19,7 +19,7 @@ main {
 
 body {
     background: var(--white);
-    color: var(--indigo-dye);
+    color: var(--black);
 }
 
 header,
@@ -40,7 +40,6 @@ h1 {
 }
 
 h2 {
-    color: var(--indigo-dye);
     font-size: 2em;
     margin: 1rem 0 1rem 0;
     background: var(--sky-blue);
@@ -49,7 +48,6 @@ h2 {
 }
 
 h3 {
-    color: var(--cerulean);
     font-size: 1.5em;
     margin: 2rem 0 1rem 0;
     background: var(--sky-blue);
@@ -60,7 +58,6 @@ h3 {
 h4,
 h5,
 h6 {
-    color: var(--cerulean);
     margin: 2rem 0 1rem 0;
     background: var(--sky-blue);
     padding: 0.2em 0.5em;

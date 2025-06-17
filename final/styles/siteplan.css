@@ -7,8 +7,8 @@
 }
 
 .example2 {
-    color: var(--white);
-    background: var(--cerulean);
+    color: var(--black);
+    background: var(--platinum);
     padding: 0.2em 0.5em;
     border-radius: 4px;
     margin: 1rem 0;
